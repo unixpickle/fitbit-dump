@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~5.0.0"
+  },
+  "fitbit": {
+    "appUUID": "edaf42f6-295c-4d27-99b8-dff652114bb7",
+    "appType": "app",
+    "appDisplayName": "AltimeterTest",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#607d8b",
+    "requestedPermissions": [
+      "access_internet",
+      "access_location"
+    ],
+    "buildTargets": [
+      "atlas",
+      "vulcan"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "AltimeterTest"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}

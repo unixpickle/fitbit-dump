@@ -1,0 +1,4 @@
+<svg>
+  <text x="50" y="100" id="pressure-reading" fill="white" font-size="25" text-length="50" />
+  <text x="50" y="200" id="altitude-reading" fill="white" font-size="25" text-length="50" />
+</svg>
