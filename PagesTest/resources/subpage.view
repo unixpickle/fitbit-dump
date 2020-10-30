@@ -1,0 +1,5 @@
+<svg class="background">
+  <use href="#text-button" id="close-button" y="0">
+    <set href="#text" attributeName="text-buffer" to="CLOSE PAGE" />
+  </use>
+</svg>

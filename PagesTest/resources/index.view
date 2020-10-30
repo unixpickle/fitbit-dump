@@ -1,0 +1,5 @@
+<svg class="background">
+  <use href="#text-button" id="open-button" y="0">
+    <set href="#text" attributeName="text-buffer" to="OPEN PAGE" />
+  </use>
+</svg>
