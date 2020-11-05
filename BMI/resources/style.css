@@ -1,0 +1,44 @@
+.background {
+  viewport-fill: fb-black;
+}
+
+text {
+  font-family: System-Regular;
+}
+
+.field-label {
+  fill: fb-purple;
+  text-anchor: end;
+}
+
+.field-value {
+  fill: fb-white;
+}
+
+.separator {
+  fill: fb-cyan;
+}
+
+#bmi-label {
+  font-size: 30;
+}
+
+#bmi-value {
+  font-size: 30;
+}
+
+#weight-label {
+  font-size: 25;
+}
+
+#weight-value {
+  font-size: 25;
+}
+
+#height-label {
+  font-size: 25;
+}
+
+#height-value {
+  font-size: 25;
+}

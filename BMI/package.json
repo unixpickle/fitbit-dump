@@ -1,0 +1,24 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~5.0.0"
+  },
+  "fitbit": {
+    "appUUID": "eb10b570-7999-493d-8ee9-db679f77a672",
+    "appType": "app",
+    "appDisplayName": "BMI",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_user_profile"
+    ],
+    "buildTargets": [
+      "vulcan"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "BMI"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}
