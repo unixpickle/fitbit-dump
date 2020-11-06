@@ -1,11 +1,11 @@
 <svg class="background">
   <text id="bmi-label" class="field-label" x="50%-10" y="50">BMI:</text>
-  <text id="bmi-value" class="field-value" x="50%+10" y="50">0</text>
+  <text id="bmi-value" class="field-value" x="50%+10" y="50">0000</text>
 
   <rect class="separator" x="10" y="80" width="100%-20" height="2" />
 
   <text id="weight-label" class="field-label" x="50%-10" y="105">Weight:</text>
-  <text id="weight-value" class="field-value" x="50%+10" y="105">0</text>
+  <text id="weight-value" class="field-value" x="50%+10" y="105">00000 lbs</text>
   <use id="add-weight" href="#icon-button" class="medium-button application-fill plus-button"
        x="100%-82" y="84" />
   <use id="sub-weight" href="#icon-button" class="medium-button application-fill minus-button"
@@ -13,8 +13,8 @@
 
   <rect class="separator" x="10" y="160" width="100%-20" height="2" />
 
-  <text id="height-label" class="field-label" x="50%-10" y="185">Heightt:</text>
-  <text id="height-value" class="field-value" x="50%+10" y="185">0' 0"</text>
+  <text id="height-label" class="field-label" x="50%-10" y="185">Height:</text>
+  <text id="height-value" class="field-value" x="50%+10" y="185">000' 000"</text>
   <use id="add-height" href="#icon-button" class="medium-button application-fill plus-button"
        x="100%-82" y="164" />
   <use id="sub-height" href="#icon-button" class="medium-button application-fill minus-button"

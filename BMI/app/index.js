@@ -7,8 +7,8 @@ const heightValue = document.getElementById('height-value');
 
 const addHeight = document.getElementById('add-height');
 const subHeight = document.getElementById('sub-height');
-const addWeight = document.getElementById('add-height');
-const subWeight = document.getElementById('sub-height');
+const addWeight = document.getElementById('add-weight');
+const subWeight = document.getElementById('sub-weight');
 
 let currentWeight = 150;
 let currentHeight = 5*12 + 7;

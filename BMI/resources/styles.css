@@ -19,6 +19,14 @@ text {
   fill: fb-cyan;
 }
 
+.plus-button {
+  href: "plus.png";
+}
+
+.minus-button {
+  href: "minus.png";
+}
+
 #bmi-label {
   font-size: 30;
 }
@@ -41,4 +49,12 @@ text {
 
 #height-value {
   font-size: 25;
+}
+
+.application-fill {
+  fill: fb-cyan;
+}
+
+.background-fill {
+  fill: fb-white;
 }
