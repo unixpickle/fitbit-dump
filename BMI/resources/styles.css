@@ -6,6 +6,10 @@ text {
   font-family: System-Regular;
 }
 
+image {
+  fill: fb-white;
+}
+
 .field-label {
   fill: fb-purple;
   text-anchor: end;
@@ -15,16 +19,28 @@ text {
   fill: fb-white;
 }
 
+.field-stack-label {
+  fill: fb-purple;
+  text-anchor: middle;
+}
+
+.field-stack-value {
+  fill: fb-white;
+  text-anchor: middle;
+}
+
 .separator {
   fill: fb-cyan;
 }
 
-.plus-button {
+.plus-button #image {
   href: "plus.png";
+  fill: fb-white;
 }
 
-.minus-button {
+.minus-button #image {
   href: "minus.png";
+  fill: fb-white;
 }
 
 #bmi-label {
@@ -53,8 +69,4 @@ text {
 
 .application-fill {
   fill: fb-cyan;
-}
-
-.background-fill {
-  fill: fb-white;
 }
