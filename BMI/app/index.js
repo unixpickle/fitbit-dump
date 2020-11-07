@@ -13,6 +13,9 @@ const subWeight = document.getElementById('sub-weight');
 let currentWeight = 150;
 let currentHeight = 5*12 + 7;
 
+const BMI_RUNGS = [18.5, 25, 30.0];
+const RUNG_COLORS = ['fb-red', 'fb-green', 'fb-yellow', 'fb-red'];
+
 function updateFields() {
   weightValue.text = currentWeight + ' lbs';
   heightValue.text = Math.floor(currentHeight / 12) + "' " + (currentHeight % 12) + '"';
@@ -21,6 +24,18 @@ function updateFields() {
   const meters = currentHeight * 0.0254;
   const bmi = kg / (meters * meters);
   bmiValue.text = bmi.toFixed(1);
+
+  // Don't let rounding mess with the coloration and confuse
+  // the user.
+  const reParsed = parseFloat(bmiValue.text);
+  let color = RUNG_COLORS[RUNG_COLORS.length - 1];
+  for (let i = 0; i < BMI_RUNGS.length; ++i) {
+    if (reParsed < BMI_RUNGS[i]) {
+      color = RUNG_COLORS[i];
+      break;
+    }
+  }
+  bmiValue.style.fill = color;
 }
 
 function loadStats() {
