@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~5.0.0"
+  },
+  "fitbit": {
+    "appUUID": "3862310d-8c9d-4c14-babb-3adc25b4aaf3",
+    "appType": "app",
+    "appDisplayName": "Anniversary",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#607d8b",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "vulcan"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "Anniversary"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}

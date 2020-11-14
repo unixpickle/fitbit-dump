@@ -1,0 +1,10 @@
+<svg class="background">
+  <image href="couples_photo.png" x="0" y="0" width="100%" height="100%-100" />
+  <rect x="0" y="100%-100" width="100%" height="100" fill="white" />
+  <image class="heart" href="heart_bw.png" x="20" y="100%-118" width="48" height="48" />
+  <image class="heart" href="heart_bw.png" x="100%-68" y="100%-118" width="48" height="48" />
+  <text id="days-together" x="50%" y="100%-40"
+        font-family="System-Bold" fill="fb-pink"
+        font-size="40"
+        text-anchor="middle">XXXXX days</text>
+</svg>
