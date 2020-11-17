@@ -3,8 +3,12 @@
   <rect x="0" y="100%-100" width="100%" height="100" fill="white" />
   <image class="heart" href="heart_bw.png" x="20" y="100%-118" width="48" height="48" />
   <image class="heart" href="heart_bw.png" x="100%-68" y="100%-118" width="48" height="48" />
-  <text id="days-together" x="50%" y="100%-40"
+  <text id="days-together" x="50%" y="100%-60"
         font-family="System-Bold" fill="fb-pink"
         font-size="40"
         text-anchor="middle">XXXXX days</text>
+  <text id="countdown" x="50%" y="100%-20"
+        font-family="System-Bold" fill="fb-pink"
+        font-size="30"
+        text-anchor="middle">000:00:00:00</text>
 </svg>
