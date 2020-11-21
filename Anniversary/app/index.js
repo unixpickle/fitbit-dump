@@ -2,6 +2,7 @@ import clock from "clock";
 import document from "document";
 
 const DAY_MILLIS = 24 * 60 * 60 * 1000;
+const YEAR_MILLIS = 365.24 * DAY_MILLIS;
 const ANNIVERSARY = new Date(2019, 10, 20, 0, 0, 0, 0);
 
 function daysSince(d) {
@@ -56,12 +57,24 @@ function monospaceString(chars) {
 
 function updateCountdown() {
   document.getElementById('days-together').text = daysSince(ANNIVERSARY) + ' days';
-  document.getElementById('countdown').text = formatCountdown(nextAnniversary(ANNIVERSARY).getTime() - new Date().getTime());
+
+  const nextAnn = nextAnniversary(ANNIVERSARY);
+  const countdownTime = nextAnn.getTime() - new Date().getTime();
+  if (countdownTime > 0) {
+    document.getElementById('countdown').text = formatCountdown(countdownTime);
+  } else {
+    const years = Math.round((new Date().getTime() - ANNIVERSARY.getTime()) / YEAR_MILLIS);
+    let suffix = 's';
+    if (years === 1) {
+      suffix = '';
+    }
+    document.getElementById('countdown').text = years + ' year' + suffix + '!';
+  }
 }
 
 updateCountdown();
 
 clock.granularity = "seconds";
 clock.ontick = (evt) => {
-   updateCountdown();
+  updateCountdown();
 };
